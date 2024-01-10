@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.form-group
+{
+color:blue;
+}
+h1
+{
+background-color:red;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Updating Student</title>
+</head>
+<body>
+<h1>Update Student Details</h1>
+<form action="ustud" method="post">
+<input type="hidden" name="_method" value="put">
+  <div class="form-group">
+    <label for="kodId">KodNest Id</label>
+    <input type="text" class="form-control" id="kodId" aria-describedby="add help" name="kodId" placeholder="Enter Student Details">
+    <br>
+    <small id="studentHelp" class="form-text text-muted">Please Enter your Existing KodNestID....</small>
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="branch">Branch</label>
+    <input type="text" class="form-control" id="branch" name="branch" placeholder="Branch">
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary" value="UpdateStudent">UpdateStudent</button>
+</form>
+</body>
+</html>
